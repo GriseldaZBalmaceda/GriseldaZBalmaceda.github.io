@@ -1,21 +1,39 @@
 
 body,html{
     
-    /* font-family: 'Domine', serif; */
+    font-family: 'Nunito', sans-serif;
     margin:0px;
     height: 100%;
     width:100%;
+    position: relative;
   
 }
+
 .left-side{
     position: fixed;
 }
 .right-side{
     margin-left: 50%;
 }
+.right-side-Image{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+}
+.header-image{
+    border-radius: 50%;
+    margin-top: 10%;
+    width: 100%;
+}
+.intro-header{
+    text-align: center;
+}
 h1{
+    font-weight: 500;
     font-family: 'Cookie', cursive;
-    font-size: 3.5em;
+    font-size: 3em;
+    
 }
 h2{
     font-size: 4em;
@@ -25,6 +43,9 @@ h2{
 width: 100%;
 height: 100%;
 overflow: hidden;
+}
+article{
+    padding:40px;
 }
 
 .navbar{
@@ -47,4 +68,24 @@ li>a{
     font-size: 30px;
 text-decoration: none;
 }
+#card {
 
+    background-color: white; 
+    text-align: center;
+    transition: right .2s linear,
+                bottom .2s linear,
+                top .2s linear,
+                left .2s linear,
+                line-height .2s linear,
+                z-index .2s linear;
+  }
+  .expanded {
+      position: absolute;
+      left:50%;
+    z-index: 9999;
+  }
+  
+  
+.hidden{
+    visibility: hidden;
+}

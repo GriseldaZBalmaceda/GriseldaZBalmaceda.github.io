@@ -1,9 +1,10 @@
-/*this was made with the help of W3schools I have added 3 different media queries
+/*this was made with the help of W3schools I have added 4 different media queries
+
+/* Extra small devices (phones, 600px and down) */
 .row {
     display: flex;
     flex-wrap: wrap;
   }
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .col-xs-1 {width: 8.33%;}
     .col-xs-2 {width: 16.66%;}
@@ -20,6 +21,7 @@
     .example {background: red;}
     .left-side{visibility: hidden;}
     .right-side{margin-left: 0!important}
+    .expanded{left:0px!important;position: inherit!important;}
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -36,7 +38,7 @@
     .col-s-10 {width: 83.33%;}
     .col-s-11 {width: 91.66%;}
     .col-s-12 {width: 100%;}
-    .example {background: green;}
+    /* .expanded{left:0px!important;position: inherit!important;} */
   
   }
   
@@ -54,6 +56,7 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+    
     .example {background: blue;}
  
   } 
