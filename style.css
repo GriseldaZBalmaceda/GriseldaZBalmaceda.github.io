@@ -8,11 +8,59 @@ body,html{
     position: relative;
   
 }
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+.welcome{
+    z-index: 1;
+    height:100vh;
+    width:100vw;
+    position: fixed;
+    overflow: hidden;
+    background-color: #acc6aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    letter-spacing: 2px;
+    color:#FFF
+}
 
+
+.heading{
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+    margin-bottom: 0px;
+    opacity: 0;
+}
+.sub-heading{
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom:40px;
+    opacity: 0;
+}
+.loader-wrapper{
+    height:2px;
+    width:150px;
+    background-color: white;
+    border-radius: 100px;
+    opacity: 0;
+
+}
+.loader{
+    height:2px;
+    widows: 150px;
+    background-color: #005542;
+    border-radius: 100px;
+}
 .left-side{
     position: fixed;
 }
 .right-side{
+    padding: 50px;
     margin-left: 50%;
 }
 .right-side-Image{
@@ -30,6 +78,7 @@ body,html{
     text-align: center;
 }
 h1{
+    text-align: center;
     font-weight: 500;
     font-family: 'Cookie', cursive;
     font-size: 3em;
@@ -44,8 +93,15 @@ width: 100%;
 height: 100%;
 overflow: hidden;
 }
-article{
-    padding:40px;
+
+.home{
+    height: 100vh;
+}
+.portfolio{
+    height: 100vh;
+}
+.contact{
+    height: 100vh;
 }
 
 .navbar{
@@ -68,9 +124,12 @@ li>a{
     font-size: 30px;
 text-decoration: none;
 }
-#card {
-
+.card {
+    position: relative;
+    margin:10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: white; 
+    overflow: hidden;
     text-align: center;
     transition: right .2s linear,
                 bottom .2s linear,
@@ -79,6 +138,19 @@ text-decoration: none;
                 line-height .2s linear,
                 z-index .2s linear;
   }
+
+  
+  .green-hover {
+    transition: all 0.25s ease-in;
+    border-bottom: 5px solid transparent;
+  }
+  .green-hover:hover {
+    transform: translateY(-5px);
+    border: none;
+    border-bottom: 5px solid #acc6aa;
+  }
+  
+
   .expanded {
       position: absolute;
       left:50%;
@@ -88,4 +160,27 @@ text-decoration: none;
   
 .hidden{
     visibility: hidden;
+}
+
+.fab{
+    color:#acc6aa;
+    font-size: 50px;
+}
+.form{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+
+.card-information{
+    height:100vh;
+    width:100vw;
+    position:absolute;
+    background-color: #acc6aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    letter-spacing: 2px;
+    color:#FFF;
+    opacity:0;
 }
