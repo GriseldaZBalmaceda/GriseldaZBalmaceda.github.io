@@ -5,7 +5,7 @@ anime.timeline({
     easing:'easeOutExpo',
 })
 .add({
-    width:['0vw','100vw'],
+    width:'100vw',
     opacity:1,
     duration:1200,
 })

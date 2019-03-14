@@ -139,7 +139,9 @@ text-decoration: none;
                 z-index .2s linear;
   }
 
-  
+  a{
+color:black;
+text-decoration:none  }
   .green-hover {
     transition: all 0.25s ease-in;
     border-bottom: 5px solid transparent;
