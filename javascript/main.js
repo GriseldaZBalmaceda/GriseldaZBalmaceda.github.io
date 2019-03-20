@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',()=>{
-    //wrapper animation 
+    // wrapper animation 
 anime.timeline({
     targets:'.welcome',
     easing:'easeOutExpo',
@@ -54,15 +54,19 @@ anime({
 
 });
 
-var expand=anime({
-    targets:".card-information",
-    easing:'easeOutExpo',
-    width:['0vw','100vw'],
+anime({
+    targets: '.social-icons li',
     opacity:1,
-    autoplay:false
-    
-});
-document.querySelector('.card').onclick=expand.restart;
+  translateY:['30px','0px'],
+    easing: 'spring(1, 80, 10, 0)',
+    duration:5000,
+    delay:anime.stagger(600,{start:5000}),
+  });
+
+
+
+
+
 
 })
 
