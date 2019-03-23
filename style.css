@@ -203,3 +203,30 @@ a.focus:link, a.focus:visited
 .icon{
     opacity: 0;
 }
+.contact{
+    position: relative;
+    margin:auto;
+    margin-left: auto;
+    width:50%
+}
+form{
+    width:50%;
+    margin: auto;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #005542;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
