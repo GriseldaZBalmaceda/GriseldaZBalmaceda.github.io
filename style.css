@@ -18,12 +18,15 @@ body,html{
     width:100vw;
     position: fixed;
     overflow: hidden;
-    background-color: #acc6aa;
+    background-image: url("images/blur-bright.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     letter-spacing: 2px;
-    color:#FFF;
+    color:#005542;
     flex-direction: column;
 }
 
@@ -58,11 +61,20 @@ body,html{
 }
 .left-side{
     position: fixed;
+}
+.left-image{
+    position: fixed;
+  height: 100vh;
+    background-image:url("images/apple-computer-computers-326504.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     
 }
 .right-side{
-    padding: 50px;
     margin-left: 50%;
+    padding:20px;
 }
 .right-side-Image{
         text-align: center;
@@ -95,25 +107,22 @@ height: 100%;
 overflow: hidden;
 }
 .social-icons{
-    display: block;
+
     margin:auto;
     margin-left: auto;
     margin-right: auto;
-    width:40%;
+    width:35%;
+    overflow: hidden;
 }
 
 
 
 .navbar{
     font-family: 'Cookie', cursive;
+    float:right;
 }
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    float: right;
-  }
+
+
 li {
     display: block;
     float: left;
@@ -165,11 +174,11 @@ a.focus:link, a.focus:visited
 
 .fab {
     color:#acc6aa;
-    font-size: 50px;
+    font-size: 35px;
 }
 .fas{
     color:#acc6aa;
-    font-size: 50px; 
+    font-size: 35px; 
 }
 .form{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
