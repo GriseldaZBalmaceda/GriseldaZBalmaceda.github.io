@@ -1,25 +1,86 @@
+/*GLOBAL STYLE*/
+body,
+html {
 
-body,html{
-    
     font-family: 'Nunito', sans-serif;
-    margin:0px;
+    margin: 0px;
     height: 100%;
-    width:100%;
+    width: 100%;
     position: relative;
-  
+
 }
+
 ::-webkit-scrollbar {
-    width: 0px;  
-    background: transparent; 
+    width: 0px;
+    background: transparent;
 }
-.welcome{
+
+.button {
+    background-color: #acc6aa;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Cookie', cursive;
+    font-size: 3em;
+
+}
+
+h2 {
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+li {
+    display: block;
+    float: left;
+    padding: 10px;
+}
+
+li>a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+
+}
+
+a:hover {
+    border-bottom: 5px solid #acc6aa;
+}
+
+.active {
+    border-bottom: 5px solid #acc6aa;
+}
+
+a.focus:link,
+a.focus:visited {
+    border-bottom: 5px solid #acc6aa
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/*welcome splashe page*/
+.welcome {
     z-index: 9999;
-    height:100vh;
-    width:100vw;
+    height: 100vh;
+    width: 100vw;
     position: fixed;
     overflow: hidden;
     background-color: white;
-    background-image: url("images/blur-bright.jpg");
+    background-image: url("images/splash-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,206 +88,170 @@ body,html{
     align-items: center;
     justify-content: center;
     letter-spacing: 2px;
-    color:#005542;
+    color: #005542;
     flex-direction: column;
 }
 
-
-.heading{
-    font-family: 'Lobster Two', cursive;
-    font-size: 50px;
-    margin-bottom: 0px;
-    opacity: 0;
-}
-.sub-heading{
+.sub-heading {
     font-size: 16px;
     font-weight: 100;
     letter-spacing: 2px;
     font-family: 'Playfair Display', serif;
-    margin-bottom:40px;
+    margin-bottom: 40px;
     opacity: 0;
 }
-.loader-wrapper{
-    height:2px;
-    width:150px;
+
+.loader-wrapper {
+    height: 2px;
+    width: 150px;
     background-color: white;
     border-radius: 100px;
     opacity: 0;
 
 }
-.loader{
-    height:2px;
+
+.loader {
+    height: 2px;
     widows: 150px;
     background-color: #005542;
     border-radius: 100px;
 }
-.left-side{
+
+
+
+/*main page,column styles*/
+.heading {
+    font-family: 'Lobster Two', cursive;
+    font-size: 50px;
+    margin-bottom: 0px;
+    opacity: 0;
+}
+
+.left-side {
     position: fixed;
 }
-.left-image{
+
+.left-image {
     position: fixed;
-  height: 100vh;
-    background-image:url("images/apple-computer-computers-326504.jpg");
+    height: 100vh;
+    background-image: url("images/left-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
+
 }
-.right-side{
+
+.right-side {
     margin-left: 50%;
-    padding:20px;
+    padding: 20px;
 }
-.right-side-Image{
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        width: 40%;
+
+.right-side-Image {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
-.header-image{
+
+.header-image {
     border-radius: 50%;
     margin-top: 10%;
     width: 100%;
 }
-.intro-header{
-    text-align: center;
-}
-h1{
-    text-align: center;
-    font-weight: 500;
-    font-family: 'Cookie', cursive;
-    font-size: 3em;
-    
-}
-h2{
-    font-size: 4em;
-    margin-bottom:0px;
-}
-.image{
-width: 100%;
-height: 100%;
-overflow: hidden;
-}
-.social-icons{
 
-    margin:auto;
+.intro-header {
+    text-align: center;
+}
+
+.navbar {
+    font-family: 'Cookie', cursive;
+    float: right;
+}
+
+/*icon css*/
+.social-icons {
+
+    margin: auto;
     margin-left: auto;
     margin-right: auto;
-    width:35%;
+    width: 35%;
     overflow: hidden;
 }
-
-
-
-.navbar{
-    font-family: 'Cookie', cursive;
-    float:right;
-}
-
-
-li {
-    display: block;
-    float: left;
-    padding:10px;
-    }
-li>a{
-    color:black;
-    font-size: 30px;
-text-decoration: none;
-
-}
-a:hover{
-    border-bottom: 5px solid #acc6aa;
-}
-.active{
-    border-bottom: 5px solid #acc6aa; 
-}
-a.focus:link, a.focus:visited
-{border-bottom: 5px solid #acc6aa}
-.card {
-    position: relative;
-    margin:10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    background-color: white; 
-    overflow: hidden;
-    text-align: center;
-    transition: right .2s linear,
-                bottom .2s linear,
-                top .2s linear,
-                left .2s linear,
-                line-height .2s linear,
-                z-index .2s linear;
-  }
-
-
-  .green-hover {
-    transition: all 0.25s ease-in;
-    border-bottom: 5px solid transparent;
-  }
-  .green-hover:hover {
-    transform: translateY(-5px);
-    border: none;
-    border-bottom: 5px solid #acc6aa;
-  }
-    
-.hidden{
-    visibility: hidden;
-}
-
-.fab {
-    color:#acc6aa;
-    font-size: 35px;
-}
-.fas{
-    color:#acc6aa;
-    font-size: 35px; 
-}
-.form{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-
-.card-information{
-    z-index: 999;
-    height:100%;
-    width:0vw;
-    opacity:0;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 2px;
-    background-color:white;
- 
-
-}
-
 .icon{
     opacity: 0;
 }
-.contact{
-    position: relative;
-    margin:auto;
-    margin-left: auto;
-    width:50%
+.fab {
+    color: #acc6aa;
+    font-size: 35px;
 }
-form{
-    width:50%;
+
+.fas {
+    color: #acc6aa;
+    font-size: 35px;
+}
+
+
+/*card css*/
+
+.card {
+    position: relative;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    overflow: hidden;
+    text-align: center;
+    transition: right .2s linear,
+        bottom .2s linear,
+        top .2s linear,
+        left .2s linear,
+        line-height .2s linear,
+        z-index .2s linear;
+}
+
+
+.green-hover {
+    transition: all 0.25s ease-in;
+    border-bottom: 5px solid transparent;
+}
+
+.green-hover:hover {
+    transform: translateY(-5px);
+    border: none;
+    border-bottom: 5px solid #acc6aa;
+}
+/*Contact Form Css*/
+.form {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+    position: relative;
+    margin: auto;
+    margin-left: auto;
+    width: 50%
+}
+
+form {
+    width: 50%;
     margin: auto;
 }
-input[type=text], select, textarea {
+
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-  }
-  
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: #005542;
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
-  }
-  
+}

@@ -1,14 +1,20 @@
+/*USED ANIME JS TO ANIMATE MY SPLASH PAGE*/
+
+
+//the following wont run untol everything is loaded
 document.addEventListener('DOMContentLoaded',()=>{
-    // wrapper animation 
+    // wrapper animation , target main page and eases it in
 anime.timeline({
     targets:'.welcome',
     easing:'easeOutExpo',
 })
+//changes the width and opacity of hte current '.welcome' target
 .add({
     width:'100vw',
     opacity:1,
     duration:1200,
 })
+//this decides the type of animation, delay, and duration. When finsihed we remove the animation
 .add({
     delay:2700,
     translateX:'100vw',
@@ -17,7 +23,7 @@ anime.timeline({
         document.querySelector('.welcome').remove();
     },
 }),
-
+//Heading and sub heading  animation 
 anime({
     targets:'.heading',
     delay:400,
@@ -34,6 +40,7 @@ anime({
     translateY:['-30px','0px'],
     easing:'easeOutExpo', 
 })
+
 //loader wrapper animation
 anime({
     targets:'.loader-wrapper',
@@ -53,7 +60,7 @@ anime({
     width:['0%','100%']
 
 });
-
+// social icon animation. Used the easing with spring method.
 anime({
     targets: '.social-icons li',
     opacity:1,

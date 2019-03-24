@@ -10,15 +10,14 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cookie|Lobster+Two|Open+Sans+Condensed:300|Playfair+Display"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Lobster+Two|Open+Sans+Condensed:300|Playfair+Display"rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="javascript/anime.min.js"></script>
     <script src="javascript/main.js"></script>
 </head>
 
 <body>
+    <!--Splash Page-->
     <div class="welcome">
         <h1 class="heading">Griselda Balmaceda</h1>
         <h3 class="sub-heading">Full-Stack Developer in the Making</h3>
@@ -26,12 +25,16 @@
             <div class="loader"></div>
         </div>
     </div>
+    <!--main section, contains two columns on desktop version while only a single column on mobile-->
     <div class="main">
         <div class="row">
+            <!--left side column-->
             <div class="col-xs-12 col-s-12 col-6 left-side">
                 <div class="left-image"></div>
             </div>
+            <!--right side column-->
             <div class="col-xs-12 col-s-12 col-6 right-side">
+                <!--navigation-->
                 <div class="navbar">
                     <ul>
                         <li><a href="#home" class="focus">About</a></li>
@@ -39,11 +42,13 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
+                <!--home section-->
                 <div id="home">
                     <div class="right-side-Image">
-                        <img class="header-image" src="images/Header-image.png">
+                        <img alt="Griselda Balmaceda" class="header-image" src="images/Header-image.png">
                     </div>
                     <h1>Griselda Balmaceda</h1>
+                    <!--social icons-->
                     <div class="social-icons">
                         <ul>
                             <li class="icon"><i class="fab fa-github"></i></li>
@@ -52,23 +57,24 @@
                             <li class="icon"><i class="fas fa-file"></i></li>
                         </ul>
                     </div>
-                    <p>Welcome to my Personal Website! I am so excited that you are here today and hope stay to look
+                    <p>Welcome to my Personal Website! I am so excited that you are here today and hope you stay to look
                         around! </p>
                     <p>I am currently a student at Bellevue University completing my Bachelors in Web Development and am
-                        wanting to be a Full-Stack Developer.I am a creative individual that loves to see a concept
-                        design come
-                        to life and believe
+                        wanting to be a
+                        Full-Stack Developer.I am a creative individual that loves to see a concept design come to life
+                        and believe
                         in building beautiful,responsive and reliable applications. </p>
                     <p>Below you will find some of my current projects and school repositories.Please feel free to reach
                         out or follow me on any of
                         my social media. If you would just like my resume you can download it by clicking on the
                         document icon!</p>
                 </div>
-
+                <!--Portfolio Section-->
                 <div id="portfolio">
                     <h1>Portfolio</h1>
                     <div class="all_projects">
                         <div class="row">
+                            <!--BioSite Project-->
                             <div class="col-xs-12 col-6">
                                 <div class="card green-hover">\
                                     <img class="image" src="images/portfolio.JPG">
@@ -76,11 +82,12 @@
                                     <div class="card-body">
                                         <div class="text">
                                             <p>Check out this cool website I created using Bootstrap!</p>
-                                            <a href="">Go to Site</a>
+                                            <a class="button" href="">Go to Site</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!--Fun side project-->
                             <div class="col-xs-12 col-6">
                                 <div class="card green-hover">
                                     <img class="image" src="images/portfolio-2.JPG">
@@ -88,30 +95,32 @@
                                     <div class="text">
                                         <p>This fun site was created with purely HTML/CSS.</p>
                                     </div>
-                                    <a href="https://github.com/GriseldaZBalmaceda/Portfolio" target="_blank">Check it
+                                    <a class="button" href="https://github.com/GriseldaZBalmaceda/Portfolio" target="_blank">Check it
                                         out</a>
                                 </div>
                             </div>
+                            <!--Javasript Repository-->
                             <div class="col-xs-12 col-6">
                                 <div class="card green-hover">
                                     <img class="image" src="images/portfolio-3.png">
-                                    <h3>Web 230-Javascript</h3>
+                                    <h3>Web 231-Javascript</h3>
                                     <div class="text">
                                         <p>This cool repository holds all my Javascript projects I created while
                                             attending Bellevue University</p>
-                                        <a href="https://github.com/GriseldaZBalmaceda/web-231" target="_blank">See
+                                        <a class="button" href="https://github.com/GriseldaZBalmaceda/web-231" target="_blank">See
                                             Repository</a>
                                     </div>
                                 </div>
                             </div>
+                            <!--Node Repository-->
                             <div class="col-xs-12 col-6">
                                 <div class="card green-hover">
                                     <img class="image" src="images/nodejs.png">
-                                    <h3>Web 230-Javascript</h3>
+                                    <h3>Web 330-Node</h3>
                                     <div class="text">
                                         <p>This cool repository holds all my Node.js projects I created while attending
                                             Bellevue University</p>
-                                        <a href="https://github.com/GriseldaZBalmaceda/web-231" target="_blank">See
+                                        <a class="button" href="https://github.com/GriseldaZBalmaceda/web-231" target="_blank">See
                                             Repository</a>
                                     </div>
                                 </div>
@@ -119,6 +128,7 @@
                         </div>
                     </div>
                 </div>
+                <!--Contact Section-->
                 <div id="contact">
                     <h1>Contact Me</h1>
                     <div class="row">
