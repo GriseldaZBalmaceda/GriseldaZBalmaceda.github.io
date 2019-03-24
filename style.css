@@ -55,7 +55,7 @@ li>a {
 
 }
 
-a:hover {
+.navbar>a:hover {
     border-bottom: 5px solid #acc6aa;
 }
 
@@ -177,6 +177,9 @@ a.focus:visited {
     margin-right: auto;
     width: 35%;
     overflow: hidden;
+}
+.social-icons>li{
+    border-bottom: none;
 }
 .icon{
     opacity: 0;
