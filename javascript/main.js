@@ -78,3 +78,11 @@ anime({
 })
 
 
+function openPop(){
+    console.log("REEE")
+    anime({
+        targets: '.popUp',
+        opacity:1,
+
+      });
+}
