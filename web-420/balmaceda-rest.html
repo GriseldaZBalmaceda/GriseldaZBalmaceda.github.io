@@ -14,46 +14,43 @@
 
 <body>
     <h1>Presentations</h1>
-<!-- Hidden video div -->
-<div style="display:none;" id="video1">
-    <video class="lg-video-object lg-html5" controls preload="none">
-        <source src="/restful-api-presentations/REST.mp4" type="video/mp4">
-         Your browser does not support HTML5 videos.
-    </video>
-</div>
-<div style="display:none;" id="video2">
-    <video class="lg-video-object lg-html5" controls preload="none">
-        <source src="/restful-api-presentations/REST-API.mp4" type="video/mp4">
-         Your browser does not support HTML5 videos.
-    </video>
-</div>
-<div style="display:none;" id="video3">
-    <video class="lg-video-object lg-html5" controls preload="none">
-        <source src="/restful-api-presentations/SOAP.mp4" type="video/mp4">
-         Your browser does not support HTML5 videos.
-    </video>
-</div>
-<!-- data-src should not be provided when you use html5 videos -->
-<div id="html5-videos">
-  <div data-poster="video-poster1.jpg" data-sub-html="video caption1" data-html="#video1" >
-      <img style="height: 50%;width: 50%" src="/restful-api-presentations/REST-thumbnail.JPG"  />
-  </div>
-  <div data-poster="video-poster1.jpg" data-sub-html="video caption2" data-html="#video2" >
-    <img style="height: 50%;width: 50%" src="/restful-api-presentations/RESTful-API-thumbnail.jpg"  />
-</div>
-<div data-poster="video-poster1.jpg" data-sub-html="video caption2" data-html="#video2" >
-    <img style="height: 50%;width: 50%" src="/restful-api-presentations/SOAP-thumbnail.JPG"  />
-</div>
-</div>
-
-
-<script src="/javascript/jquery/"></script>
-
+    <!-- Hidden video div -->
+    <div style="display:none;" id="video1">
+        <video class="lg-video-object lg-html5" controls preload="none">
+            <source src="/restful-api-presentations/REST.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+        </video>
+    </div>
+    <div style="display:none;" id="video2">
+        <video class="lg-video-object lg-html5" controls preload="none">
+            <source src="/restful-api-presentations/REST-API.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+        </video>
+    </div>
+    <div style="display:none;" id="video3">
+        <video class="lg-video-object lg-html5" controls preload="none">
+            <source src="/restful-api-presentations/SOAP.mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+        </video>
+    </div>
+    <!-- data-src should not be provided when you use html5 videos -->
+    <div id="html5-videos">
+        <div data-poster="video-poster1.jpg" data-sub-html="video caption1" data-html="#video1">
+            <img style="height: 50%;width: 50%" src="/restful-api-presentations/REST-thumbnail.JPG" />
+        </div>
+        <div data-poster="video-poster1.jpg" data-sub-html="video caption2" data-html="#video2">
+            <img style="height: 50%;width: 50%" src="/restful-api-presentations/RESTful-API-thumbnail.jpg" />
+        </div>
+        <div data-poster="video-poster1.jpg" data-sub-html="video caption2" data-html="#video2">
+            <img style="height: 50%;width: 50%" src="/restful-api-presentations/SOAP-thumbnail.JPG" />
+        </div>
+    </div>
+    <script src="/javascript/jquery/"></script>
     <script src="/javascript/jquery/dist/jquery.min.js"></script>
     <script src="/javascript/lightgallery/dist/js/lightgallery-all.js"></script>
     <script src="/javascript/lightgallery/lib/jquery.mousewheel.min.js"></script>
     <script type="text/javascript">
-   $('#html5-videos').lightGallery(); 
+        $('#html5-videos').lightGallery();
     </script>
 </body>
 
