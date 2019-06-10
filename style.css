@@ -41,10 +41,11 @@ h2 {
     height: 100%;
     overflow: hidden;
 }
-
+.social-icons>ul>li{
+  float: left;
+}
 li {
     display: block;
-    float: left;
     padding: 10px;
 }
 
@@ -174,13 +175,27 @@ a.focus:visited {
 }
 
 .navbar {
-    z-index: 9999;
+    position: absolute;
+    display: block;
     font-family: 'Cookie', cursive;
     float: right;
+    right: 0;
+}
+.menuIcon{
+    width: 10%;
+    FLOAT: RIGHT;
+    MARGIN-RIGHT: 30PX;
+    COLOR: green;
 }
 ul>li{
     z-index: 9999;
 }
+/* .menu{
+    opacity: 0;
+    right: 0;
+   
+
+} */
 /*icon css*/
 .social-icons {
 

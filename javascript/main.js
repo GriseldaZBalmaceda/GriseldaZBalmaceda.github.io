@@ -69,20 +69,15 @@ anime({
     duration:5000,
     delay:anime.stagger(600,{start:5000}),
   });
-
-
-
-
-
-
+  
 })
 
 
-function openPop(){
-    console.log("REEE")
-    anime({
-        targets: '.popUp',
-        opacity:1,
+// function openPop(){
+//     console.log("REEE")
+//     anime({
+//         targets: '.popUp',
+//         opacity:1,
 
-      });
-}
+//       });
+
