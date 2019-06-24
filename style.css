@@ -188,7 +188,7 @@ padding:35px;
 
 .navbar {
     height: 100%;
-    width: 0px;
+    width:0px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -201,6 +201,9 @@ padding:35px;
     font-family: 'Cookie', cursive;
     float: right;
     right: 0;
+}
+.sideNavWidth{
+    width:250px;
 }
 .cancel{
     position: absolute;
