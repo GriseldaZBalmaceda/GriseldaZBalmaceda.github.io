@@ -130,6 +130,11 @@ a.focus:visited {
 
 
 /*main page,column styles*/
+
+#main{
+    transition: margin-right .5s;
+ 
+}
 .heading {
     font-family: 'Lobster Two', cursive;
     font-size: 50px;
@@ -137,25 +142,32 @@ a.focus:visited {
     opacity: 0;
 }
 
-.left-side {
-    position: fixed;
+#home{
+padding:35px;
+}
+#portfolio{
+    padding:35px
+}
+#contact{
+    padding:35px;
 }
 
-.left-image {
+/* .left-side {
     position: fixed;
+} */
+
+.left-image {
+    position: sticky;
+    top:0;
     height: 100vh;
     background-image: url("images/left-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+  
 
 }
-
-.right-side {
-    margin-left: 50%;
-    padding: 20px;
-}
+ 
 
 .right-side-Image {
     text-align: center;
@@ -175,10 +187,25 @@ a.focus:visited {
 }
 
 .navbar {
-    position: absolute;
-    display: block;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    background-color: #acc6aa;
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 35px;
+    /* position: absolute;
+    display: block; */
     font-family: 'Cookie', cursive;
     float: right;
+    right: 0;
+}
+.cancel{
+    position: absolute;
+    padding: 15px;
+    top: 0;
     right: 0;
 }
 .menuIcon{

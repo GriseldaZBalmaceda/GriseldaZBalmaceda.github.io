@@ -28,7 +28,7 @@
         </div>
     </div>
     <!--main section, contains two columns on desktop version while only a single column on mobile-->
-    <div class="main">
+    <div id="main" class="main">
         <div class="row">
             <!--left side column-->
             <div class="col-xs-12 col-s-12 col-6 left-side">
@@ -37,10 +37,12 @@
             <!--right side column-->
             <div class="col-xs-12 col-s-12 col-6 right-side">
                 <!--navigation-->
-             <!-- <img class="menuIcon" src="images/vine.svg" > -->
-                <div class="navbar" >
-                   
+             <img class="menuIcon" src="images/leaves.svg" onclick="openSideNav()" >
+
+                <div id="sideNav" class="navbar">
+                     <div class="cancel" onclick="closeSideNav()"><i class="fas fa-times"></i></div>
                     <div class="menu">
+                      
                         <ul>
                             <li><a href="#home" class="focus">About</a></li>
                             <li><a href="#portfolio">Portfolio</a></li>
@@ -174,5 +176,15 @@
     </div>
 </body>
 <script src="main.js"></script>
-
+<script>
+function openSideNav(){
+    document.getElementById("sideNav").style.width="250px";
+    document.getElementById("main").style.marginRight="250px";
+    document.getElementById("main").style.padding=""
+}
+function closeSideNav(){
+    document.getElementById("sideNav").style.width="0px";
+    document.getElementById("main").style.marginRight="0px"
+}
+</script>
 </html>
