@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Griselda Balmaceda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="/javascript/lightgallery/dist/css/lightgallery.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="grid.css">
+
+
+</head>
+
+<body>
+    <h1>Presentations</h1>
+    <!-- Hidden video div -->
+    <div style="display:none;" id="video1">
+        <video class="lg-video-object lg-html5" controls preload="none">
+            <source src="/restful-api-presentations/OAUTH (1).mp4" type="video/mp4">
+            Your browser does not support HTML5 videos.
+        </video>
+    </div>
+    <!-- data-src should not be provided when you use html5 videos -->
+    <div id="html5-videos">
+        <div data-poster="video-poster1.jpg" data-sub-html="video caption1" data-html="#video1">
+            <img style="height: 50%;width: 50%" src="/restful-api-presentations/oauth-thumbnail.JPG" />
+        </div>
+     
+    </div>
+    <script src="/javascript/jquery/"></script>
+    <script src="/javascript/jquery/dist/jquery.min.js"></script>
+    <script src="/javascript/lightgallery/dist/js/lightgallery-all.js"></script>
+    <script src="/javascript/lightgallery/lib/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript">
+        $('#html5-videos').lightGallery();
+    </script>
+</body>
+
+</html>
