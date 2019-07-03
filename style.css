@@ -41,9 +41,11 @@ h2 {
     height: 100%;
     overflow: hidden;
 }
-.social-icons>ul>li{
-  float: left;
+
+.social-icons>ul>li {
+    float: left;
 }
+
 li {
     display: block;
     padding: 10px;
@@ -55,7 +57,9 @@ li>a {
     text-decoration: none;
 
 }
-
+.menu ul>li>a{
+    color: darkolivegreen!important;
+}
 .navbar>a:hover {
     border-bottom: 5px solid #acc6aa;
 }
@@ -92,8 +96,9 @@ a.focus:visited {
     color: #005542;
     flex-direction: column;
 }
-.popUp{
- z-index: 2;
+
+.popUp {
+    z-index: 2;
     height: 100vh;
     width: 50vw;
     background-color: green;
@@ -130,11 +135,17 @@ a.focus:visited {
 
 
 /*main page,column styles*/
-
-#main{
-    transition: margin-right .5s;
- 
+main {
+    height: 100vh;
+    overflow: scroll;
 }
+
+#main {
+    transition: margin-right .5s;
+    height: 100vh;
+    overflow: scroll;
+}
+
 .heading {
     font-family: 'Lobster Two', cursive;
     font-size: 50px;
@@ -142,14 +153,16 @@ a.focus:visited {
     opacity: 0;
 }
 
-#home{
-padding:35px;
+#home {
+    padding: 35px;
 }
-#portfolio{
-    padding:35px
+
+#portfolio {
+    padding: 35px
 }
-#contact{
-    padding:35px;
+
+#contact {
+    padding: 35px;
 }
 
 /* .left-side {
@@ -158,16 +171,19 @@ padding:35px;
 
 .left-image {
     position: sticky;
-    top:0;
+    top: 0;
     height: 100vh;
     background-image: url("images/left-image.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  
+
 
 }
- 
+
+.right-side {
+    overflow-y: scroll;
+}
 
 .right-side-Image {
     text-align: center;
@@ -188,7 +204,7 @@ padding:35px;
 
 .navbar {
     height: 100%;
-    width:0px;
+    width: 0px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -202,24 +218,31 @@ padding:35px;
     float: right;
     right: 0;
 }
-.sideNavWidth{
-    width:250px;
+
+.sideNavWidth {
+    width: 250px;
 }
-.cancel{
+
+.cancel {
     position: absolute;
     padding: 15px;
     top: 0;
     right: 0;
 }
-.menuIcon{
-    width: 10%;
-    FLOAT: RIGHT;
-    MARGIN-RIGHT: 30PX;
-    COLOR: green;
+
+.menuIcon {
+    width: 5%;
+    float: RIGHT;
+
+    margin-top: 5%;
+    margin-right: 5%;
+
 }
-ul>li{
+
+ul>li {
     z-index: 9999;
 }
+
 /* .menu{
     opacity: 0;
     right: 0;
@@ -235,12 +258,15 @@ ul>li{
     width: 35%;
     overflow: hidden;
 }
-.social-icons>li{
+
+.social-icons>li {
     border-bottom: none;
 }
-.icon{
+
+.icon {
     opacity: 0;
 }
+
 .fab {
     color: #acc6aa;
     font-size: 35px;
@@ -280,6 +306,7 @@ ul>li{
     border: none;
     border-bottom: 5px solid #acc6aa;
 }
+
 /*Contact Form Css*/
 .form {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
