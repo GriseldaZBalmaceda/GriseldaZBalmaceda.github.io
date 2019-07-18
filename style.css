@@ -306,7 +306,9 @@ ul>li {
     border: none;
     border-bottom: 5px solid #acc6aa;
 }
-
+.checkOutButton{
+    min-height: 40px;
+}
 /*Contact Form Css*/
 .form {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
