@@ -58,7 +58,10 @@ li>a {
 
 }
 .menu ul>li>a{
-    color: darkolivegreen!important;
+    color: white!important;
+}
+.menu ul {
+    padding:none;
 }
 .navbar>a:hover {
     border-bottom: 5px solid #acc6aa;
@@ -136,13 +139,13 @@ a.focus:visited {
 
 /*main page,column styles*/
 main {
-    height: 100vh;
+    height: 100%;
     overflow: scroll;
 }
 
 #main {
     transition: margin-right .5s;
-    height: 100vh;
+    height: 100%;
     overflow: scroll;
 }
 
@@ -220,7 +223,7 @@ main {
 }
 
 .sideNavWidth {
-    width: 250px;
+    width: 100%;
 }
 
 .cancel {
@@ -243,12 +246,9 @@ ul>li {
     z-index: 9999;
 }
 
-/* .menu{
-    opacity: 0;
-    right: 0;
-   
-
-} */
+.menu {
+text-align: center;
+}
 /*icon css*/
 .social-icons {
 
